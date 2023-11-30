@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <title>Grid Page</title>
+</head>
+
+<body>
+    <header style="text-decoration: underline;" ><img src="css/wikipedia.png" style="height: 40px;"> WIKIPEDIA</header>
+    <div class="container">
+        <aside>
+            <div class="sidebar">
+                
+                <ul class="sidebar_Menu">
+                    <li><a href="#"><i class="fa fa-qrcode"></i>Dashboard</a></li>
+        
+                    <li class="sub-menu"><a href="#"><i class="fa fa-yelp"></i>Products<i class="fa fa-chevron-circle-down indicator"></i></a>
+        
+                        <ul>
+                            <li><a href="#"><i class="fa fa-shopping-basket"></i>Electronic</a></li>
+                            <li><a href="#"><i class="fa fa-shopping-basket"></i>Appliances</a></li>
+                            <li><a href="#"><i class="fa fa-shopping-basket"></i>Fashion</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu"><a href="#"><i class="fa fa fa-envelope"></i>Events<i class="fa fa-chevron-circle-down indicator"></i></a>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-envelope"></i>Today</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>Month</a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>Year</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-address-card"></i>Contact</a></li>
+                </ul>
+            </div>
+            <script>
+                $(".sub-menu a").click((event) => {
+                    $(event.target).parent().find("ul").slideToggle();
+                    $(event.target).parent().find(".indicator").toggleClass("reverse");
+                });
+            </script>
+        </aside>
+        <main>
+
+            <section class="box box-1">
+                <h3 style="text-align: center; text-decoration: underline;">Laptop</h3>
+                <p style="font-style: italic;">A laptop computer or notebook computer, also known as a laptop or notebook for short, is a small, portable personal computer (PC). Laptops typically have a clamshell form factor with a flat panel screen (usually 11–17 in or 280–430 mm in diagonal size) on the inside of the upper lid and an alphanumeric keyboard and pointing device (such as a trackpad and/or trackpoint) on the inside of the lower lid, although 2-in-1 PCs with a detachable keyboard are often marketed as laptops or as having a "laptop mode".[1][2] Most of the computer's internal hardware is fitted inside the lower lid enclosure under the keyboard, although many laptops have a built-in webcam at the top of the screen and some modern ones even feature a touch-screen display. In most cases, unlike tablet computers which run on mobile operating systems, 
+                    laptops tend to run on desktop operating systems which have been traditionally associated with desktop computers.</p>
+            </section>
+            <section class="box box-2">
+                <h3 style="text-align: center; text-decoration: underline;">Monitor</h3>
+                <p style="font-style: italic;">A computer monitor is an output device that displays information in pictorial or textual form. A discrete monitor comprises a visual display, support electronics, power supply, housing, electrical connectors, and external user controls.
+
+                    The display in modern monitors is typically an LCD with LED backlight, having by the 2010s replaced CCFL backlit LCDs. Before the mid-2000s, most monitors used a cathode-ray tube (CRT) as the image output technology.[1] A monitor is typically connected to its host computer via DisplayPort, HDMI, USB-C, DVI, or VGA. 
+                    Less commonly, monitors sometimes use other proprietary connectors and signals to connect to a computer.</p>
+            </section>
+            <section class="box box-3">
+                <h3 style="text-align: center; text-decoration: underline;">Mobile</h3>
+                <p style="font-style: italic;">A mobile phone (or cellphone[a]) is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area, as opposed to a fixed-location phone (landline phone). The radio frequency link establishes a connection to the switching systems of a mobile phone operator, which provides access to the public switched telephone network (PSTN).</p>
+            </section>
+            <section class="box box-4">
+                <h3 style="text-align: center; text-decoration: underline;">Smart Watch</h3>
+                <p style="font-style: italic;">A smartwatch is a wearable computer in the form of a watch; modern smartwatches provide a local touchscreen interface for daily use, while an associated smartphone app provides management and telemetry, such as long-term biomonitoring. While early models could perform basic tasks, such as calculations, digital time telling, translations, and game-playing, smartwatches released since 2015 have more general functionality closer to smartphones, including mobile apps, a mobile operating system and WiFi/Bluetooth connectivity.</p>
+            </section>
+            <section class="box box-5">
+                <h3 style="text-align: center; text-decoration: underline;">Inverter</h3>
+                <p style="font-style: italic;">"Inverter" redirects here. For the logic gate, see Inverter (logic gate). For other uses, see Inverter (disambiguation).
+                    Part of a series on
+                    Power engineering
+                    Electric power conversion
+                    Voltage converterElectric power conversionHVDC converter stationAC-to-AC converterDC-to-DC converterRectifierInverter
+                    Electric power infrastructure
+                    Electric power systemPower stationElectrical gridInterconnectorDemand response
+                    Electric power systems components
+                    Ring main unitGrid-tie inverterEnergy storageBusbarBus ductRecloserProtective relay
+                    vte
+                    An inverter on a free-standing solar plant
+                    Overview of solar-plant inverters
+                    A power inverter, inverter or invertor is a power electronic device or circuitry that changes direct current (DC) to alternating current (AC).[1] The resulting AC frequency obtained depends on the particular device employed. Inverters do the opposite of rectifiers which were originally large electromechanical devices converting AC to DC.[2]</p>
+            </section>
+
+            <section class="box box-6">
+                <h3 style="text-align: center; text-decoration: underline;">Server</h3>
+                <p style="font-style: italic;">In computing, a server is a piece of computer hardware or software (computer program) that provides functionality for other programs or devices, called "clients". This architecture is called the client–server model. Servers can provide various functionalities, often called "services", such as sharing data or resources among multiple clients or performing computations for a client. A single server can serve multiple clients, and a single client can use multiple servers. A client process may run on the same device or may connect over a network to a server on a different device.[1] Typical servers are database servers, file servers, mail servers, 
+                    print servers, web servers, game servers, and application servers.[2]</p>
+            </section>
+
+
+
+        </main>
+    </div>
+    <footer><a href="#">Click for More Products</a></footer>
+</body>
+
+</html>
